@@ -24,7 +24,7 @@ export const APP_KEY = "EXPRESS_APP";
  *
  * @param settings
  */
-const expressLoader: MicroframeworkLoader = (settings?: MicroframeworkSettings): Promise<any> | any => {
+const ExpressLoader: MicroframeworkLoader = (settings?: MicroframeworkSettings): Promise<any> | any => {
 
     const app: Application = express();
 
@@ -46,4 +46,4 @@ const expressLoader: MicroframeworkLoader = (settings?: MicroframeworkSettings):
     settings!.setData(APP_KEY, app);
 };
 
-export {expressLoader}
+export {ExpressLoader}

@@ -1,6 +1,6 @@
 import {MicroframeworkLoader, MicroframeworkSettings} from "microframework";
 import {Application} from "express";
-import {APP_KEY} from "./express.loader";
+import {APP_KEY} from "./ExpressLoader";
 import {normalizePort} from "../utils";
 import {config} from "../config";
 import * as http from "http";
@@ -13,7 +13,7 @@ import * as http from "http";
  *
  * @param settings
  */
-const serverLoader: MicroframeworkLoader = (settings?: MicroframeworkSettings): Promise<any> | any => {
+const ServerLoader: MicroframeworkLoader = (settings?: MicroframeworkSettings): Promise<any> | any => {
     const app: Application = (settings!.getData(APP_KEY) as Application);
 
     const port: number = normalizePort(config.port);
@@ -25,4 +25,4 @@ const serverLoader: MicroframeworkLoader = (settings?: MicroframeworkSettings): 
     server.listen(port);
 };
 
-export {serverLoader}
+export {ServerLoader}

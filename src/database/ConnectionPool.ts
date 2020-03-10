@@ -2,9 +2,9 @@ import {Connection, createConnection} from 'mongoose'
 import {createMongoDBConnectionString} from "../utils";
 import {config} from '../config'
 
-const connection: Connection = establishConnection(config.mongoDB);
+const peopleDBConnection: Connection = establishConnection(config.mongoDB);
 
-export {connection};
+export {peopleDBConnection};
 
 /**
  * Create a new connection to the mongo
