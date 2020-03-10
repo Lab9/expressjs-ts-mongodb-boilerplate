@@ -1,0 +1,16 @@
+{
+  // checkout https://www.typescriptlang.org/docs/handbook/compiler-options.html for all compiler options
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "pretty": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
